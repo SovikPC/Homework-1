@@ -16,8 +16,7 @@ public class Homework4 {
             );
             boolean isNumber = false;
             String inputOperation = scan.nextLine();
-            if ("end".equals(inputOperation)){
-                System.out.println("\n Программа завершена!\n");
+            if ("end".equals(inputOperation)){                
                 break;
             }
             int operation = 0;
@@ -70,6 +69,7 @@ public class Homework4 {
                 exceptionPrint();
             }          
         }
+        System.out.println("\n Программа завершена!\n");
     }
 
     public static double addEarnings(double earnings, Scanner scan) throws Exception {
