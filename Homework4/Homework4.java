@@ -43,16 +43,16 @@ public class Homework4 {
                         if(usnEarnings < usnEarningsMinusSpendings){
                             System.out.println(
                                 "\nМы советуем вам УСН доходы \n" +
-                                "Ваш налог составит: " + usnEarnings +"рублей \n" +
-                                "Налог на другой системе: " + usnEarningsMinusSpendings + "рублей \n" +
-                                "Экономия: " + (usnEarningsMinusSpendings - usnEarnings) + "рублей \n"
+                                "Ваш налог составит: " + usnEarnings +" рублей \n" +
+                                "Налог на другой системе: " + usnEarningsMinusSpendings + " рублей \n" +
+                                "Экономия: " + (usnEarningsMinusSpendings - usnEarnings) + " рублей \n"
                             );
                         } else if (usnEarnings > usnEarningsMinusSpendings) {
                             System.out.println(
                                 "\nМы советуем вам УСН доходы минус рассходы \n" +
-                                "Ваш налог составит: " + usnEarningsMinusSpendings +"рублей \n" +
-                                "Налог на другой системе: " + usnEarnings + "рублей \n" +
-                                "Экономия: " + (usnEarnings - usnEarningsMinusSpendings) + "рублей\n"
+                                "Ваш налог составит: " + usnEarningsMinusSpendings +" рублей \n" +
+                                "Налог на другой системе: " + usnEarnings + " рублей \n" +
+                                "Экономия: " + (usnEarnings - usnEarningsMinusSpendings) + " рублей\n"
                             );
                         } else {
                             System.out.println(
