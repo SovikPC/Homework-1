@@ -47,12 +47,16 @@ public class Homework4 {
                                 "Налог на другой системе: " + usnEarningsMinusSpendings + "рублей \n" +
                                 "Экономия: " + (usnEarningsMinusSpendings - usnEarnings) + "рублей \n"
                             );
-                        } else {
+                        } else if (usnEarnings > usnEarningsMinusSpendings) {
                             System.out.println(
                                 "\nМы советуем вам УСН доходы минус рассходы \n" +
                                 "Ваш налог составит: " + usnEarningsMinusSpendings +"рублей \n" +
                                 "Налог на другой системе: " + usnEarnings + "рублей \n" +
                                 "Экономия: " + (usnEarnings - usnEarningsMinusSpendings) + "рублей\n"
+                            );
+                        } else {
+                            System.out.println(
+                                "\nМожете выбрать любую систему налогообложения\n"
                             );
                         }
                         Thread.sleep(300);
@@ -109,7 +113,6 @@ public class Homework4 {
     }
 
     public static int taxEarningsMinusSpendings(double earnings, double spendings) {
-
         int tax = (int) (earnings - spendings) * 15 / 100;
         if (tax >= 0) {
             return tax;
