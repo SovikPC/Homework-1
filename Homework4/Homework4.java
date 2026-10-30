@@ -75,8 +75,7 @@ public class Homework4 {
     public static double addEarnings(double earnings, Scanner scan) throws Exception {
         boolean summ = false;
         System.out.println("\nВведите сумму дохода:");
-        String moneyStr = scan.nextLine();
-        System.out.println("\n");
+        String moneyStr = scan.nextLine();        
         double money = 0;
         try {
             money = Double.parseDouble(moneyStr);
@@ -96,7 +95,6 @@ public class Homework4 {
         boolean summ = false;
         System.out.println("\nВведите сумму расходов:");
         String moneyStr = scan.nextLine();
-        System.out.println("\n");
         double money = 0;
         try {
             money = Double.parseDouble(moneyStr);
